@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddNewTodoItemViewController.h"
 
 @class DetailViewController;
 
-@interface MasterViewController : UITableViewController
+@interface MasterViewController : UITableViewController <NewItemDelegate>
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
 

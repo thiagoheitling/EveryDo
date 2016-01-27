@@ -16,6 +16,7 @@
 		D0879D771C5801B000EE82A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0879D751C5801B000EE82A0 /* LaunchScreen.storyboard */; };
 		D0879D801C58024D00EE82A0 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = D0879D7F1C58024D00EE82A0 /* Todo.m */; };
 		D0879DAA1C58262900EE82A0 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0879DA91C58262900EE82A0 /* CustomTableViewCell.m */; };
+		D0879DD61C58774400EE82A0 /* AddNewTodoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0879DD51C58774400EE82A0 /* AddNewTodoItemViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		D0879D7F1C58024D00EE82A0 /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
 		D0879DA81C58262900EE82A0 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		D0879DA91C58262900EE82A0 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		D0879DD41C58774400EE82A0 /* AddNewTodoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewTodoItemViewController.h; sourceTree = "<group>"; };
+		D0879DD51C58774400EE82A0 /* AddNewTodoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewTodoItemViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				D0879D6E1C5801B000EE82A0 /* DetailViewController.m */,
 				D0879DA81C58262900EE82A0 /* CustomTableViewCell.h */,
 				D0879DA91C58262900EE82A0 /* CustomTableViewCell.m */,
+				D0879DD41C58774400EE82A0 /* AddNewTodoItemViewController.h */,
+				D0879DD51C58774400EE82A0 /* AddNewTodoItemViewController.m */,
 				D0879D7E1C58024D00EE82A0 /* Todo.h */,
 				D0879D7F1C58024D00EE82A0 /* Todo.m */,
 				D0879D701C5801B000EE82A0 /* Main.storyboard */,
@@ -164,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0879DD61C58774400EE82A0 /* AddNewTodoItemViewController.m in Sources */,
 				D0879D801C58024D00EE82A0 /* Todo.m in Sources */,
 				D0879D691C5801B000EE82A0 /* AppDelegate.m in Sources */,
 				D0879DAA1C58262900EE82A0 /* CustomTableViewCell.m in Sources */,
