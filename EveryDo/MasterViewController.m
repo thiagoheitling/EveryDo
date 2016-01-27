@@ -27,9 +27,9 @@
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 
-    Todo *task1 = [[Todo alloc] initWithTitle:@"Lecture one." taskDescription:@"Attend lecture one." priorityNumber:1 andIsCompleted:YES];
-    Todo *task2 = [[Todo alloc] initWithTitle:@"Lecture two." taskDescription:@"Attend lecture two." priorityNumber:2 andIsCompleted:YES];
-    Todo *task3 = [[Todo alloc] initWithTitle:@"Lecture three." taskDescription:@"Attend lecture three." priorityNumber:3 andIsCompleted:NO];
+    Todo *task1 = [[Todo alloc] initWithTitle:@"Lecture one" taskDescription:@"Attend lecture one" priorityNumber:1 andIsCompleted:YES];
+    Todo *task2 = [[Todo alloc] initWithTitle:@"Lecture two" taskDescription:@"Attend lecture two" priorityNumber:2 andIsCompleted:YES];
+    Todo *task3 = [[Todo alloc] initWithTitle:@"Lecture three" taskDescription:@"Attend lecture three" priorityNumber:3 andIsCompleted:NO];
     
     NSMutableArray *toDoTasks = [[NSMutableArray alloc] initWithObjects:task1, task2, task3, nil];
     
@@ -61,9 +61,10 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = self.objects[indexPath.row];
-        DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
-        [controller setDetailItem:object];
+        Todo *object = self.objects[indexPath.row];
+       // DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
+        DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] self];
+        controller.todoItem = object;
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
     }
